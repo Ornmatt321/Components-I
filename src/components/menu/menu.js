@@ -32,7 +32,15 @@ function menuMaker(linksArray) {
   return menuWrapper;
 }
 
-console.log(menuMaker(menuItems));
+
+
+document.querySelector('.header').appendChild(menuMaker(menuItems));
+
+//OPTIONAL
+// const newMenu = menuMaker(menuItems);
+// const headerElem = document.querySelector('.header');
+// headerElem.appendChild(newMenu);
+
 
 /*
   Step 1: Write a component called 'menuMaker' to create a menu like the markup below:
